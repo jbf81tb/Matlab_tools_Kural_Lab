@@ -47,9 +47,11 @@ switch movie_type
         nsta = running_for_3Dt(movie_folder, frame_gap, background);
         SaveNSTASeparate(movie_folder, 'separated_', nsta);
     case 3
-        %don't have the code yet
+        comb_run_seq(movie_folder, t_stacks, num_sequences, frame_gap, background)
     case 4
-        %don't have the code yet
+        comb_run_3D_seq(move_folder, t_stacks, z_stacks, num_sequences, frame_gap, background)
+        nsta = running_for_3Dt(movie_folder, frame_gap, background);
+        SaveNSTASeparate(movie_folder, 'separated_', nsta);
 end
 
 %% Analyzing the movies
